@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThermoBlock — Умная стена. Гарантированно.</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-cube-fill me-2"></i>
+                <span>Thermo</span>Block
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#problem">Проблема</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-it-works">Как работает</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#benefits">Преимущества</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">Вопросы</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-secondary" href="#cta">Рассчитать</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h1 class="display-4 fw-bold mb-4"><span>Термо</span>Блок - контроль за возведением стен в самом блоке</h1>
+                    <p class="lead mb-4">Технология несъемной опалубки ThermoBlock — это «конструктор» для идеальной стены. Всего за один этап вы получаете монолитную, утепленную и сейсмостойкую конструкцию. Гарантия результата заложена в самой системе.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#cta" class="btn btn-primary btn-lg">Рассчитать экономию</a>
+                        <a href="#video" class="btn btn-outline-primary btn-lg">Смотреть видео-обзор</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="video-placeholder" id="videoPlaceholder">
+                        <i class="bi bi-play-circle-fill"></i>
+                        <div class="video-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4 mb-md-0">
+                    <div class="stat-item">
+                        <div class="stat-number">5x</div>
+                        <div class="stat-text">Быстрее коробки, чем газобетон</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4 mb-md-0">
+                    <div class="stat-item">
+                        <div class="stat-number">-40%</div>
+                        <div class="stat-text">Расходов на отопление</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number">9 баллов</div>
+                        <div class="stat-text">Сейсмостойкость</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number">25 лет</div>
+                        <div class="stat-text">Гарантия на конструктив</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section-padding" id="problem">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3">Выбирая «проверенные» материалы, вы все равно рискуете?</h2>
+                    <p class="lead text-muted">Большинство проблем дома — холод, трещины, грибок — родом из невидимых этапов строительства. С ThermoBlock такой фокус невозможен.</p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="split-screen" id="splitScreen">
+                        <div class="split-left"></div>
+                        <div class="split-right"></div>
+                        <div class="split-divider">
+                            <i class="bi bi-arrows-move" id="splitDivider"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section-padding bg-light" id="how-it-works">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3">Как построить правильную стену за 3 шага?</h2>
+                    <p class="lead text-muted">Технология ThermoBlock превращает сложный процесс в простой конструктор</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="step-card" id="step1">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">
+                            <i class="bi bi-puzzle-fill"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Собрать</h3>
+                        <p class="text-muted mb-4">Как детский конструктор. Блоки с паз-гребнем быстро собираются в стену. Никакого раствора, идеальная геометрия.</p>
+                        <button class="btn btn-outline-primary step-btn" data-step="1">Смотреть анимацию</button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="step-card" id="step2">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">
+                            <i class="bi bi-lightning-charge-fill"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Усилить</h3>
+                        <p class="text-muted mb-4">Арматура фиксируется строго в готовых каналах. Нельзя пропустить или сделать криво — все предусмотрено конструкцией.</p>
+                        <button class="btn btn-outline-primary step-btn" data-step="2">Смотреть анимацию</button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="step-card" id="step3">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">
+                            <i class="bi bi-droplet-fill"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Залить</h3>
+                        <p class="text-muted mb-4">Один раз залили бетон — получили готовую монолитную и уже утепленную стену. Дальше — только отделка.</p>
+                        <button class="btn btn-outline-primary step-btn" data-step="3">Смотреть анимацию</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section-padding" id="benefits">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3">Преимущества технологии ThermoBlock</h2>
+                    <p class="lead text-muted">Не просто обещания, а измеримые результаты</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="bi bi-fire"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Энергоэффективность</h3>
+                        <p class="text-muted">Стена сразу готова к отделке без дополнительного утепления. Экономия на отоплении до 40%.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Прочность и долговечность</h3>
+                        <p class="text-muted">Монолитный железобетонный каркас с сейсмостойкостью до 9 баллов по шкале MSK-64.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="bi bi-speedometer2"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Скорость строительства</h3>
+                        <p class="text-muted">Коробка дома в 5 раз быстрее, чем из газобетона с утеплением. Всего 1-2 недели на этаж.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="bi bi-clipboard-check"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Контроль качества</h3>
+                        <p class="text-muted">Технология минимизирует "человеческий фактор". Результат предсказуем и гарантирован.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding bg-light" id="faq">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3">А что насчет...? Развеиваем главные сомнения</h2>
+                    <p class="lead text-muted">Ответы на самые частые вопросы о технологии ThermoBlock</p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
+                                    Это дорого?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Сравнивайте не цену куба материала, а цену готового к отделке квадратного метра стены. С ThermoBlock вы сразу получаете утепленную конструкцию без дополнительных работ. В итоге экономия достигает 15-20% от общей стоимости "коробки" дома по сравнению с газобетоном с утеплением.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    А где найти строителей?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Мы ведем реестр сертифицированных бригад, прошедших обучение в нашей школе. Оставьте заявку, и мы подберем для вас проверенных мастеров в вашем регионе. Наши партнеры-строители получают техническую поддержку на всех этапах работы.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    А экологичность? Пенополистирол...
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Пенополистирол в монолите бетона полностью инертен и не выделяет вредных веществ. Главная экологичность — в экономии тысяч кВт·ч энергии за годы эксплуатации. Дом из ThermoBlock потребляет в 2-3 раза меньше энергии на отопление, снижая нагрузку на экологию.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    А как зимой строить?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Технология позволяет вести строительство круглый год. Блоки защищают бетон от замерзания в процессе гидратации. При необходимости мы используем противоморозные добавки и временные укрытия. Зимнее строительство с ThermoBlock — стандартная практика.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-3">Готовы строить без головной боли?</h2>
+                    <p class="lead mb-4">Оставьте заявку и получите в подарок:</p>
+                </div>
+            </div>
+            
+            <div class="row g-4 justify-content-center mb-5">
+                <div class="col-md-4">
+                    <div class="gift-card">
+                        <i class="bi bi-calculator-fill"></i>
+                        <h4 class="h5 mb-2">Персональный расчет</h4>
+                        <p class="mb-0">Стоимости материалов для вашего проекта</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="gift-card">
+                        <i class="bi bi-clipboard-data-fill"></i>
+                        <h4 class="h5 mb-2">Чек-лист</h4>
+                        <p class="mb-0">"10 скрытых этапов, на которых экономят недобросовестные строители"</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="gift-card">
+                        <i class="bi bi-people-fill"></i>
+                        <h4 class="h5 mb-2">Контакты бригад</h4>
+                        <p class="mb-0">3-х проверенных бригад в вашем регионе</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="lead-form">
+                        <form id="leadForm">
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Имя *</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Телефон *</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                            </div>
+                            
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label for="region" class="form-label">Регион</label>
+                                    <input type="text" class="form-control" id="region">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="area" class="form-label">Площадь дома (м²)</label>
+                                    <input type="number" class="form-control" id="area" min="50" max="500">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="project" class="form-label">Есть ли у вас проект? (необязательно)</label>
+                                <input type="file" class="form-control" id="project" accept=".pdf,.dwg,.jpg,.png">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-secondary btn-lg w-100 py-3">
+                                Получить расчет и подарки
+                            </button>
+                            
+                            <p class="text-center text-muted mt-3 small">
+                                Ваши данные защищены. Это не звонок колл-центра, а обратная связь от технического специалиста ThermoBlock.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="h4 mb-3">ThermoBlock</h3>
+                    <p class="mb-4">Технология несъемной опалубки для строительства теплых, прочных и энергоэффективных домов.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-vimeo"></i></a>
+                        <a href="#"><i class="bi bi-telegram"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="h5 mb-3">Для застройщиков</h4>
+                    <ul class="footer-links">
+                        <li><a href="#problem">О технологии</a></li>
+                        <li><a href="#benefits">Преимущества</a></li>
+                        <li><a href="#faq">Частые вопросы</a></li>
+                        <li><a href="#">Калькулятор экономии</a></li>
+                        <li><a href="#">Примеры объектов</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="h5 mb-3">Для строителей</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Обучение технологии</a></li>
+                        <li><a href="#">Сертификация бригад</a></li>
+                        <li><a href="#">Техническая документация</a></li>
+                        <li><a href="#">BIM-модели</a></li>
+                        <li><a href="#">Партнерская программа</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h4 class="h5 mb-3">Контакты</h4>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-telephone-fill me-2"></i> 8 (800) 123-45-67</li>
+                        <li><i class="bi bi-envelope-fill me-2"></i> info@thermoblock.ru</li>
+                        <li><i class="bi bi-geo-alt-fill me-2"></i> Москва, ул. Строителей, 15</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p class="mb-0">&copy; 2023 ThermoBlock. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Button -->
+    <button class="chatbot-btn" id="chatbotBtn">
+        <i class="bi bi-chat-dots-fill"></i>
+    </button>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Swiper JS (optional, for future carousels) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        // Split Screen Interaction
+        const splitScreen = document.getElementById('splitScreen');
+        const splitDivider = document.getElementById('splitDivider');
+        let isDragging = false;
+        
+        splitDivider.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            document.body.style.cursor = 'col-resize';
+            e.preventDefault();
+        });
+        
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            
+            const rect = splitScreen.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const percentage = Math.min(Math.max((x / rect.width) * 100, 10), 90);
+            
+            splitScreen.style.setProperty('--split-position', `${percentage}%`);
+            splitScreen.querySelector('.split-left').style.width = `${percentage}%`;
+            splitScreen.querySelector('.split-right').style.width = `${100 - percentage}%`;
+            splitScreen.querySelector('.split-right').style.left = `${percentage}%`;
+        });
+        
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+            document.body.style.cursor = 'default';
+        });
+        
+        // Touch events for mobile
+        splitDivider.addEventListener('touchstart', (e) => {
+            isDragging = true;
+            e.preventDefault();
+        });
+        
+        document.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            
+            const rect = splitScreen.getBoundingClientRect();
+            const touch = e.touches[0];
+            const x = touch.clientX - rect.left;
+            const percentage = Math.min(Math.max((x / rect.width) * 100, 10), 90);
+            
+            splitScreen.style.setProperty('--split-position', `${percentage}%`);
+            splitScreen.querySelector('.split-left').style.width = `${percentage}%`;
+            splitScreen.querySelector('.split-right').style.width = `${100 - percentage}%`;
+            splitScreen.querySelector('.split-right').style.left = `${percentage}%`;
+        });
+        
+        document.addEventListener('touchend', () => {
+            isDragging = false;
+        });
+        
+        // Step Buttons Animation
+        document.querySelectorAll('.step-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const step = this.getAttribute('data-step');
+                alert(`Запуск анимации для шага ${step}. В реальном лендинге здесь будет воспроизводиться видео или GIF.`);
+                
+                // Visual feedback
+                const stepElement = document.getElementById(`step${step}`);
+                stepElement.style.transform = 'scale(1.05)';
+                setTimeout(() => {
+                    stepElement.style.transform = '';
+                }, 300);
+            });
+        });
+        
+        // Video Placeholder
+        document.getElementById('videoPlaceholder').addEventListener('click', function() {
+            alert('В реальном лендинге здесь будет запускаться видео-презентация технологии ThermoBlock.');
+            
+            // Visual feedback
+            this.style.transform = 'scale(0.98)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 200);
+        });
+        
+        // Form Submission
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            
+            // Simple validation
+            if (!name || !phone) {
+                alert('Пожалуйста, заполните обязательные поля: Имя и Телефон');
+                return;
+            }
+            
+            // In a real application, here would be an AJAX request to the server
+            alert(`Спасибо, ${name}! Ваша заявка принята. Наш технический специалист свяжется с вами в ближайшее время по телефону ${phone}.`);
+            
+            // Reset form
+            this.reset();
+            
+            // Scroll to top for better UX
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+        
+        // Chatbot Button
+        document.getElementById('chatbotBtn').addEventListener('click', function() {
+            alert('Добрый день! Я виртуальный помощник ThermoBlock. Ответьте на 2 вопроса, и я помогу вам избежать 5 типичных ошибок при выборе технологии строительства.\n\n1. Как часто вы планируете бывать на стройке?\n2. Разбираетесь ли вы в схемах армирования стен?');
+        });
+        
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') === '#') return;
+                
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Initialize split screen position
+        window.addEventListener('DOMContentLoaded', () => {
+            splitScreen.style.setProperty('--split-position', '50%');
+            splitScreen.querySelector('.split-left').style.width = '50%';
+            splitScreen.querySelector('.split-right').style.width = '50%';
+            splitScreen.querySelector('.split-right').style.left = '50%';
+            
+            // Bootstrap tooltip initialization (if needed)
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.padding = '0.5rem 0';
+                navbar.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.padding = '1rem 0';
+                navbar.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.08)';
+            }
+        });
+    </script>
+</body>
+</html>

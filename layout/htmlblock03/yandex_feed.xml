@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2024-01-12T17:22">
+  <shop>
+    <name>Термоблок03</name>
+    <company>ООО "Строй Тех</company>
+    <url>https://thermoblock03.ru</url>
+    <categories>
+            <category id="1">Термоблок</category>
+            <category id="10" parentId="1">Серия 400</category>
+            <category id="11" parentId="1">Серия 300</category>
+            <category id="2">Шлакоблок</category>
+        </categories>
+    <offers>
+      <offer id="ТБ400-202401">
+                <name>Термоблок стеновой ТБ400</name>
+                <vendor>Термоблок03</vendor>
+                <vendorCode>ТБ400</vendorCode>
+                <url>http://127.0.0.1:5500/index.html#productions</url>
+                <price>от 8990</price>
+                <enable_auto_discounts>false</enable_auto_discounts>
+                <currencyId>RUR</currencyId>
+                <categoryId>10</categoryId>
+                <picture>http://127.0.0.1:5500/img_blocks/tb400.png</picture>
+                <delivery>true</delivery>
+                <description>
+                    <![CDATA[          
+                        <p>Основная линейка продукции для энергоэффективных домов.</p>
+                        <p>Стеновой блок имеет теплоизоляцию и с обоих сторон основу для укладки арматуры и заливки бетона.</p>
+                    ]]>
+                </description>                
+                <sales_notes>Необходима предоплата.</sales_notes>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <barcode>4601546021298</barcode>
+                <param name="блоков в поддоне">20</param>
+                <param name="Термическое сопротивление R, м2*°C/Вт">5.45</param>
+                <param name="Расход блоков">58.33</param>
+                <param name="Вес бетонированной стены">550 кг.</param>
+                <weight>600</weight>
+                <dimensions>60/40/20</dimensions>
+                
+            </offer>     
+    </offers>
+  </shop>
+</yml_catalog>

@@ -1,0 +1,6 @@
+create database thermo;
+create user dbuser with password 'TheRm03452817!';
+alter role dbuser set client_encoding to 'utf8';
+alter role dbuser set default_transaction_isolation to 'read committed';
+alter role dbuser set timezone to 'utc';
+grant all privileges on database thermo to dbuser;
