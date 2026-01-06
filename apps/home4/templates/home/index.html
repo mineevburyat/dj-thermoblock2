@@ -1,0 +1,18 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+
+<section>
+    <h1>Заглушка</h1>
+    <p> {% lorem 100 b random %}
+</section>
+    {% comment %}
+    {% include 'home/hero1.html' %}
+    {% include 'home/problem1.html' %}
+    {% include 'home/solution.html' %}
+    {% include 'home/smartcontrol.html' %}
+    {% include 'home/pathclient.html' %}
+    {% include 'home/benefits1.html' %}
+    {% include 'home/feedback1.html' %}
+    {% endcomment %}
+{% endblock %}
