@@ -1,18 +1,61 @@
 {% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %}ThermoBlock - Главная страница{% endblock %}
+{% block meta_description %}Технология несъемной опалубки ThermoBlock для быстрого строительства теплых и надежных домов. Рассчитайте стоимость онлайн.{% endblock %}
+
+{% block extra_css %}
+<style>
+
+</style>
+{% endblock %}
 
 {% block content %}
-
-<section class="container firssection">
-    <h1>Заглушка</h1>
-    <p> {% lorem 11 b random %}
-</section>
-    {% comment %}
-    {% include 'home/hero1.html' %}
-    {% include 'home/problem1.html' %}
-    {% include 'home/solution.html' %}
-    {% include 'home/smartcontrol.html' %}
+    <!-- Hero Section -->
+    {% include 'home/hero.html' %}
+    {% include 'home/problemandsolution.html' %}
+    {% include 'home/howitwork.html' %}
     {% include 'home/pathclient.html' %}
-    {% include 'home/benefits1.html' %}
-    {% include 'home/feedback1.html' %}
-    {% endcomment %}
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // JavaScript для главной страницы
+    document.addEventListener('DOMContentLoaded', function() {
+        // Эффект при скролле для навбара
+        const navbar = document.getElementById('mainNavbar');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+        
+        // Инициализация
+        if (window.scrollY > 100) {
+            navbar.classList.add('navbar-scrolled');
+        }
+        
+        // Анимация появления элементов при скролле
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        }, observerOptions);
+        
+        // Наблюдаем за элементами
+        document.querySelectorAll('.step-item, .section-title').forEach(el => {
+            observer.observe(el);
+        });
+    });
+</script>
 {% endblock %}
