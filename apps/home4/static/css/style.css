@@ -1,7 +1,7 @@
 :root {
     --primary: #1a5fb4;
     --primary-dark: #0d4a9c;
-    --secondary: #c72634;
+    
     --light: #f8f9fa;
     --dark: #2c3e50;
     --gray: #6c757d;
@@ -36,60 +36,7 @@ h1, h2, h3, h4, h5, .display-1, .display-2, .display-3, .display-4, .display-5, 
     }
 }
 
-/* Custom Buttons */
-.btn-primary {
-    background-color: var(--primary);
-    border-color: var(--primary);
-    padding: 0.75rem 1.5rem;
-    font-weight: 600;
-}
 
-.btn-primary:hover {
-    background-color: var(--primary-dark);
-    border-color: var(--primary-dark);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-hover);
-}
-
-.btn-secondary {
-    background-color: var(--secondary);
-    border-color: var(--secondary);
-    padding: 0.75rem 1.5rem;
-    font-weight: 600;
-}
-
-.btn-secondary:hover {
-    background-color: #e55a2b;
-    border-color: #e55a2b;
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-hover);
-}
-
-.btn-outline-primary {
-    color: var(--primary);
-    border-color: var(--primary);
-    padding: 0.75rem 1.5rem;
-    font-weight: 600;
-}
-
-.btn-outline-primary:hover {
-    background-color: var(--primary);
-    border-color: var(--primary);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-hover);
-}
-
-.hotlogo {
-    color: var(--secondary)
-}
-
-.coollogo {
-    color: var(--primary)
-}
-
-.firstsection {
-    margin-top: 6rem;
-}
 /* Header */
 .navbar {
     background-color: white;
@@ -545,3 +492,4 @@ footer {
 .transition-all {
     transition: var(--transition);
 }
+

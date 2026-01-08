@@ -1,21 +1,31 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="ru" data-bs-theme="light">
-    {% include 'home/head.html' %}
-
+{% include 'includes/_head.html' %}
 <body>
-    {% include 'home/nav.html' %}
+    <!-- Кнопка чатбота -->
     
-    {% block content %} {% endblock %}
     
-    {% include 'home/footer.html' %}
+    <!-- Модальные окна -->
+    {% include 'includes/_modals.html' %}
     
-    {% include 'home/modalform.html' %}
-    <!-- Bootstrap JS Bundle -->
+    <!-- Header (фиксированная навигация) -->
+    {% include 'includes/_header.html' %}
+    
+    <!-- Основной контент -->
+    <main class="anchor-offset">
+        {% block content %}{% endblock %}
+    </main>
+    
+    <!-- Footer -->
+    {% include 'includes/_footer.html' %}
+    
+    <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <script src="{% static 'js/base1.js' %}">
- 
-    </script>
+    <!-- Custom JS -->
+    <script src="{% static 'js/main.js' %}"></script>
+    
+    {% block extra_js %}{% endblock %}
 </body>
 </html>

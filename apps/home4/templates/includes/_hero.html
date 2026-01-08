@@ -1,0 +1,245 @@
+<section class="hero-section" id="hero">
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+            <!-- Текстовая часть -->
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="hero-content">
+                    <!-- Бейдж -->
+                    <span class="badge bg-primary bg-opacity-10 text-primary mb-3 px-3 py-2">
+                        <i class="bi bi-award me-2"></i>Технология 2024 года
+                    </span>
+                    
+                    <!-- Заголовок -->
+                    <h1 class="display-3 fw-bold mb-4">
+                        Стройте теплые дома
+                        <span class="text-primary">в 3 раза быстрее</span>
+                    </h1>
+                    
+                    <!-- Подзаголовок -->
+                    <p class="lead text-muted mb-5">
+                        Технология несъемной опалубки ThermoBlock — это революция в строительстве. 
+                        Монолитные стены с идеальной теплоизоляцией за один этап.
+                    </p>
+                    
+                    <!-- Кнопки CTA -->
+                    <div class="hero-buttons d-flex flex-wrap gap-3 mb-5">
+                        <button class="btn btn-primary btn-lg px-4 py-3" data-bs-toggle="modal" data-bs-target="#calculatorModal">
+                            <i class="bi bi-calculator-fill me-2"></i>Рассчитать стоимость
+                        </button>
+                        <a href="#technology" class="btn btn-outline-primary btn-lg px-4 py-3">
+                            <i class="bi bi-play-circle me-2"></i>Смотреть видео
+                        </a>
+                    </div>
+                    
+                    <!-- Соцкнопки под кнопками CTA -->
+                    <div class="hero-social">
+                        <p class="text-muted mb-2">Следите за нами:</p>
+                        <div class="d-flex gap-3">
+                            <a href="https://vk.com/thermoblock" class="social-btn btn btn-outline-secondary" target="_blank">
+                                <i class="bi bi-vk"></i> ВКонтакте
+                            </a>
+                            <a href="https://t.me/thermoblock" class="social-btn btn btn-outline-secondary" target="_blank">
+                                <i class="bi bi-telegram"></i> Telegram
+                            </a>
+                            <a href="https://wa.me/78001234567" class="social-btn btn btn-outline-secondary" target="_blank">
+                                <i class="bi bi-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Графическая часть -->
+            <div class="col-lg-6">
+                <div class="hero-visual">
+                    <!-- 3D визуализация блока -->
+                    <div class="block-3d">
+                        <div class="block-structure">
+                            <div class="concrete-layer"></div>
+                            <div class="insulation-layer"></div>
+                            <div class="concrete-layer"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Плавающие элементы с цифрами -->
+                    <div class="floating-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">-40%</div>
+                            <div class="stat-text">на отоплении</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3x</div>
+                            <div class="stat-text">быстрее стройки</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">25 лет</div>
+                            <div class="stat-text">гарантия</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .hero-section {
+        background: linear-gradient(135deg, 
+            rgba(26, 95, 180, 0.05) 0%, 
+            rgba(255, 107, 53, 0.05) 100%),
+            url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+        background-size: cover;
+        background-position: center;
+        padding-top: 80px; /* Для фиксированного навбара */
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .hero-content {
+        max-width: 600px;
+    }
+    
+    .hero-visual {
+        position: relative;
+        height: 500px;
+    }
+    
+    .block-3d {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 200px;
+        perspective: 1000px;
+    }
+    
+    .block-structure {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transform: rotateX(20deg) rotateY(20deg);
+        animation: float 6s ease-in-out infinite;
+    }
+    
+    .concrete-layer {
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        background: linear-gradient(45deg, #6c757d, #adb5bd);
+        border: 2px solid #495057;
+    }
+    
+    .concrete-layer:first-child {
+        top: 0;
+    }
+    
+    .concrete-layer:last-child {
+        bottom: 0;
+    }
+    
+    .insulation-layer {
+        position: absolute;
+        width: 100%;
+        height: 60%;
+        top: 20%;
+        background: linear-gradient(45deg, #1a5fb4, #0d4a9c);
+        border: 2px solid #0d4a9c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .floating-stats {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    
+    .stat-item {
+        background: white;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        text-align: center;
+        min-width: 100px;
+        transition: transform 0.3s ease;
+    }
+    
+    .stat-item:hover {
+        transform: translateY(-5px);
+    }
+    
+    .stat-number {
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: var(--bs-primary);
+        margin-bottom: 5px;
+    }
+    
+    .stat-text {
+        font-size: 0.9rem;
+        color: var(--bs-gray);
+    }
+    
+    .social-btn {
+        transition: all 0.3s ease;
+    }
+    
+    .social-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    @keyframes float {
+        0%, 100% {
+            transform: translate(-50%, -50%) rotateX(20deg) rotateY(20deg) translateY(0);
+        }
+        50% {
+            transform: translate(-50%, -50%) rotateX(20deg) rotateY(20deg) translateY(-20px);
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .hero-section {
+            text-align: center;
+            padding-top: 100px;
+        }
+        
+        .hero-content {
+            margin: 0 auto;
+        }
+        
+        .hero-buttons {
+            justify-content: center;
+        }
+        
+        .hero-social .d-flex {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .hero-visual {
+            height: 400px;
+            margin-top: 2rem;
+        }
+        
+        .block-3d {
+            width: 250px;
+            height: 150px;
+        }
+        
+        .floating-stats {
+            position: relative;
+            margin-top: 2rem;
+        }
+    }
+</style>
