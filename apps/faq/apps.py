@@ -1,6 +1,7 @@
 from django.apps import AppConfig
 
 
-class HomeConfig(AppConfig):
+class FaqConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'home'
+    name = 'faq'
+    verbose_name = 'вопрос-ответ'

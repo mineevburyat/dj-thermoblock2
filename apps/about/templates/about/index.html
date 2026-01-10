@@ -1,0 +1,271 @@
+{% extends 'home/base.html' %}
+
+{% block title %}
+ThermoBlock | О нас
+{% endblock %}
+
+{% block description %}Термоблок — система контроля качества строительства в самом блоке. Узнайте больше о нашей компании и команде{% endblock %}
+{% block keywords %}о компании, наша команда, контакты, отзывы, вопросы о TnermoBlock{% endblock %}
+
+{% block content %}
+    <!-- Блок 1: Проблема, которую мы решаем -->
+    <section class="section">
+        <div class="container">
+            <div class="content-block">
+                <h2>Проблема, на которую все закрывают глаза</h2>
+                <p class="lead">
+                    В частном строительстве 70% дефектов — результат "упрощений" со стороны строителей. 
+                    Клиент платит за качество, но не может его проконтролировать.
+                </p>
+            </div>
+
+            <div class="two-columns">
+                <div>
+                    <h3>Что происходит на обычной стройке:</h3>
+                    <ul style="margin: 20px 0 20px 20px; color: #444;">
+                        <li style="margin-bottom: 10px;">Арматуру кладут реже, чем в проекте</li>
+                        <li style="margin-bottom: 10px;">Экономят на растворе и бетоне</li>
+                        <li style="margin-bottom: 10px;">Утепление делают небрежно</li>
+                        <li style="margin-bottom: 10px;">Геометрию стен "выправляют" штукатуркой</li>
+                    </ul>
+                    <p>Результат: холодный дом, трещины, перерасход отопления.</p>
+                </div>
+                <div>
+                    <h3>Наше решение:</h3>
+                    <div class="value-proposition">
+                        <p><strong>ThermoBlock — это технология с встроенным контролем качества.</strong></p>
+                        <p>Конструкция блока физически не позволяет:</p>
+                        <ul style="margin: 15px 0 15px 20px; color: #444;">
+                            <li style="margin-bottom: 8px;">Пропустить арматуру (каналы заданы)</li>
+                            <li style="margin-bottom: 8px;">Сделать стену кривой (паз-гребень)</li>
+                            <li style="margin-bottom: 8px;">Сэкономить на утеплении (уже в блоке)</li>
+                            <li style="margin-bottom: 8px;">Недолить бетон (полости видно)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 2: Наша миссия и философия -->
+    <section class="section" style="background: #f8f9fa;">
+        <div class="container">
+            <div class="content-block">
+                <h2 style="text-align: center;">Наша миссия: вернуть доверие к слову "строитель"</h2>
+                <p class="lead" style="text-align: center; max-width: 800px; margin: 0 auto 40px;">
+                    Мы не продаем стройматериалы. Мы продаем уверенность в результате.
+                </p>
+            </div>
+
+            <div class="three-columns">
+                <div class="stat-block">
+                    <span class="stat-number">Для застройщика</span>
+                    <p class="stat-label">Сон спокойной ночью. Не нужно стоять над душой у прораба.</p>
+                    <p style="margin-top: 15px; font-size: 0.9rem;">Технология сама контролирует качество.</p>
+                </div>
+
+                <div class="stat-block">
+                    <span class="stat-number">Для строителя</span>
+                    <p class="stat-label">Меньше ответственности, больше заработать.</p>
+                    <p style="margin-top: 15px; font-size: 0.9rem;">Делаешь по инструкции — получаешь идеальный результат.</p>
+                </div>
+
+                <div class="stat-block">
+                    <span class="stat-number">Для индустрии</span>
+                    <p class="stat-label">Новый стандарт честного строительства.</p>
+                    <p style="margin-top: 15px; font-size: 0.9rem;">Прозрачность вместо "как у всех".</p>
+                </div>
+            </div>
+
+            <div class="warning-block" style="margin-top: 60px;">
+                <h3>Почему мы не такие, как другие производители стройматериалов?</h3>
+                <p>Обычные поставщики заинтересованы только в продаже кубов и тонн. Нам важно, чтобы каждый дом, построенный с ThermoBlock, стал примером качественного строительства. Поэтому мы:</p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;">
+                    <div>
+                        <p><strong>Бесплатно обучаем</strong> строительные бригады</p>
+                        <p><strong>Консультируем</strong> на всех этапах строительства</p>
+                        <p><strong>Ведем реестр</strong> проверенных подрядчиков</p>
+                    </div>
+                    <div>
+                        <p><strong>Даем расширенную гарантию</strong> при работе с нашими партнерами</p>
+                        <p><strong>Разрабатываем BIM-модели</strong> для архитекторов</p>
+                        <p><strong>Проводим выездные проверки</strong> на объектах</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 3: Как мы работаем -->
+    <section class="section">
+        <div class="container">
+            <h2 style="text-align: center;">Наша система работы — как заводская сборка</h2>
+            <p class="lead" style="text-align: center; max-width: 800px; margin: 0 auto 60px;">
+                В автомобилестроении давно отказались от "кустарщины". В строительстве мы делаем то же самое.
+            </p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Этап 1: Инженерная разработка</h3>
+                    <p>Каждый блок ThermoBlock — результат 3 лет НИОКР. Мы не просто сделали опалубку, а создали систему с предсказуемым результатом.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Этап 2: Производство по ГОСТ и ISO</h3>
+                    <p>Заводское производство исключает человеческий фактор. Каждая партия проходит контроль геометрии, плотности, прочности.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Этап 3: Сертификация строителей</h3>
+                    <p>Мы не продаем блоки "в руки". Только сертифицированным бригадам, прошедшим наше обучение. Это гарантия правильного монтажа.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Этап 4: Техническая поддержка</h3>
+                    <p>Наши инженеры консультируют на всех этапах. Можно отправить фото этапа — получите обратную связь по качеству.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Этап 5: Гарантия и мониторинг</h3>
+                    <p>Расширенная гарантия 25 лет на конструктив. Веб-камеры на объектах партнеров для удаленного контроля.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 4: Наши достижения -->
+    <section class="section" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 style="text-align: center;">Цифры, которые говорят сами за себя</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin: 60px 0;">
+                <div class="stat-block" style="border: none; background: white;">
+                    <span class="stat-number">2014</span>
+                    <p class="stat-label">Год основания компании</p>
+                    <p style="margin-top: 10px; font-size: 0.9rem;">Когда поняли: рынку нужна не новая опалубка, а решение проблемы качества</p>
+                </div>
+
+                <div class="stat-block" style="border: none; background: white;">
+                    <span class="stat-number">142</span>
+                    <p class="stat-label">Сертифицированные бригады</p>
+                    <p style="margin-top: 10px; font-size: 0.9rem;">Прошли наше обучение, работают по стандарту</p>
+                </div>
+
+                <div class="stat-block" style="border: none; background: white;">
+                    <span class="stat-number">0</span>
+                    <p class="stat-label">Судебных разбирательств</p>
+                    <p style="margin-top: 10px; font-size: 0.9rem;">С клиентами, строившими с нашими партнерами</p>
+                </div>
+
+                <div class="stat-block" style="border: none; background: white;">
+                    <span class="stat-number">98%</span>
+                    <p class="stat-label">Рекомендаций</p>
+                    <p style="margin-top: 10px; font-size: 0.9rem;">Клиентов рекомендуют нас знакомым</p>
+                </div>
+            </div>
+
+            <div class="highlight">
+                <h3>Наши клиенты строят второй и третий дом с ThermoBlock</h3>
+                <p>Это лучший показатель доверия. Не потому что дешево, а потому что предсказуемо и надежно.</p>
+                <p style="margin-top: 15px;"><strong>Средняя экономия наших клиентов:</strong></p>
+                <div style="display: flex; gap: 40px; margin-top: 20px; flex-wrap: wrap;">
+                    <div>
+                        <div style="font-size: 1.5rem; font-weight: 700;">40%</div>
+                        <div style="color: #666;">на отоплении ежегодно</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 1.5rem; font-weight: 700;">30%</div>
+                        <div style="color: #666;">времени на строительство</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 1.5rem; font-weight: 700;">60%</div>
+                        <div style="color: #666;">меньше нервов и контроля</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 5: Партнеры и сертификаты -->
+    <section class="section">
+        <div class="container">
+            <h2 style="text-align: center;">Мы работаем только с лучшими</h2>
+            <p class="lead" style="text-align: center; max-width: 800px; margin: 0 auto 40px;">
+                Наша экосистема — это гарантия качества на каждом этапе
+            </p>
+
+            <div style="text-align: center; margin: 40px 0;">
+                <h3>Наши партнеры</h3>
+                <div class="partner-logos">
+                    <div class="partner-logo">Архитектурные бюро</div>
+                    <div class="partner-logo">Проектные институты</div>
+                    <div class="partner-logo">Строительные вузы</div>
+                    <div class="partner-logo">Банки-партнеры</div>
+                    <div class="partner-logo">Страховые компании</div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin: 60px 0;">
+                <h3>Сертификаты и допуски</h3>
+                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
+                    <div style="padding: 20px; border: 1px solid #ddd; min-width: 150px;">
+                        ГОСТ 31310-2015
+                    </div>
+                    <div style="padding: 20px; border: 1px solid #ddd; min-width: 150px;">
+                        СРО проектировщиков
+                    </div>
+                    <div style="padding: 20px; border: 1px solid #ddd; min-width: 150px;">
+                        СРО строителей
+                    </div>
+                    <div style="padding: 20px; border: 1px solid #ddd; min-width: 150px;">
+                        ISO 9001
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 6: Команда -->
+    <section class="section" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 style="text-align: center;">Основатели — практики, а не менеджеры</h2>
+            <p class="lead" style="text-align: center; max-width: 800px; margin: 0 auto 40px;">
+                Мы прошли через все проблемы строительства и создали то, чего самим не хватало
+            </p>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <h4>Алексей Иванов</h4>
+                    <p style="color: #666; margin: 10px 0;">Генеральный директор</p>
+                    <p style="font-size: 0.9rem;">15 лет в строительстве. Прошел путь от прораба до генподрядчика. Знает все "схемы" экономии на стройке.</p>
+                </div>
+
+                <div class="team-member">
+                    <h4>Михаил Петров</h4>
+                    <p style="color: #666; margin: 10px 0;">Технический директор</p>
+                    <p style="font-size: 0.9rem;">Кандидат технических наук. Автор 7 патентов в строительстве. Разработал систему контроля качества ThermoBlock.</p>
+                </div>
+
+                <div class="team-member">
+                    <h4>Сергей Сидоров</h4>
+                    <p style="color: #666; margin: 10px 0;">Директор по развитию</p>
+                    <p style="font-size: 0.9rem;">Экс-банкир. Пришел в строительство, чтобы навести порядок с финансированием и гарантиями.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Секция -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 style="color: white;">Готовы строить без головной боли?</h2>
+            <p style="color: #ccc; max-width: 600px; margin: 20px auto 40px;">
+                Не важно, застройщик вы или строитель — мы найдем решение, которое сделает вашу работу предсказуемой и прибыльной
+            </p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">Для застройщиков: получить консультацию</a>
+                <a href="#" class="btn btn-secondary">Для строителей: пройти обучение</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

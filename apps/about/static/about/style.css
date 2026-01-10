@@ -1,0 +1,228 @@
+/* === БАЗОВЫЕ СТИЛИ === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #fff;
+    min-height: 100vh;
+}
+
+/* === СТРУКТУРНЫЕ БЛОКИ === */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 80px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+/* === ТИПОГРАФИЯ === */
+h1, h2, h3, h4 {
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1em;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+p {
+    margin-bottom: 1em;
+    color: #444;
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: #666;
+    font-weight: 300;
+}
+
+.highlight {
+    background: #f5f5f5;
+    padding: 20px;
+    border-left: 4px solid #333;
+    margin: 20px 0;
+}
+
+/* === ХЕДЕР СТРАНИЦЫ === */
+.page-header {
+    background: #1a1a1a;
+    color: white;
+    padding: 100px 0 60px;
+    text-align: center;
+}
+
+.page-header h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.page-subtitle {
+    font-size: 1.5rem;
+    color: #ccc;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+/* === ОСНОВНЫЕ БЛОКИ === */
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.content-block {
+    margin-bottom: 40px;
+}
+
+.stat-block {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #ddd;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000;
+    display: block;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* === СПЕЦИАЛЬНЫЕ БЛОКИ === */
+.warning-block {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    padding: 30px;
+    margin: 40px 0;
+}
+
+.value-proposition {
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 4px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #ddd;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: #333;
+    border-radius: 50%;
+}
+
+/* === КОМАНДА И ПАРТНЕРЫ === */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.team-member {
+    text-align: center;
+    padding: 20px;
+}
+
+.partner-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.partner-logo {
+    padding: 20px;
+    border: 1px solid #eee;
+    min-width: 150px;
+    text-align: center;
+}
+
+/* === CTA БЛОК === */
+.cta-section {
+    background: #1a1a1a;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #333;
+    color: white;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
