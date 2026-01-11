@@ -1,7 +1,8 @@
 from datetime import datetime
+from django.conf import settings
 
-def error_context(request):
-    """Контекстный процессор для страниц ошибок"""
+def my_context(request):
+    """Контекстный процессор для страниц"""
     return {
         'site_name': 'ThermoBlock',
         'site_url': 'https://thermoblock.ru',

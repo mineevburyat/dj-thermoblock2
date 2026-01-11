@@ -1,4 +1,6 @@
-{% load static %}
+{% load static yandex_metrika_full %}
+
+{% yandex_metrika %}
 
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm" id="mainNavbar">
     <div class="container">
@@ -16,27 +18,27 @@
         <div class="collapse navbar-collapse" id="navbarMain">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'home:index' %}#solution">Преимущества</a>
+                    <a class="nav-link" href="{% url 'home:index' %}#solution" {% ym_data_goal 'start' %}>Преимущества</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'faq:index' %}">Вопросы</a>
+                    <a class="nav-link" href="{% url 'faq:index' %}" {% ym_data_goal 'faq' %}>Вопросы</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'blocksale:index' %}">ТермоБлоки</a>
+                    <a class="nav-link" href="{% url 'blocksale:index' %}" {% ym_data_goal 'shop_block' %}>ТермоБлоки</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'construction:index' %}">Проекты</a>
+                    <a class="nav-link" href="{% url 'construction:index' %}" {% ym_data_goal 'shop_hause' %}>Проекты</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'review:index' %}">Отзывы</a>
+                    <a class="nav-link" href="{% url 'review:index' %}" {% ym_data_goal 'review' %}>Отзывы</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'about:index' %}">О нас</a>
+                    <a class="nav-link" href="{% url 'about:index' %} {% ym_data_goal 'about' %}">О нас</a>
                 </li>
             </ul>
             <div class="d-flex flex-column">
                 <!-- Кнопка "Рассчитать" -->
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#calculatorModal">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#calculatorModal" {% ym_data_goal 'btn_form' %}>
                     <i class="bi bi-calculator me-2"></i>Рассчитать
                 </button>
                 <!-- Группа кнопок соцсетей -->

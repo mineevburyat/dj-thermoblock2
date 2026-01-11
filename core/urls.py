@@ -3,11 +3,22 @@ from django.urls import path, include
 from django.views.generic import RedirectView
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.sitemaps.views import sitemap
+from .sitemaps import StaticViewSitemap, BlockViewSiteMap
 from .views import test_404, test_500, test_400, test_403,favicon
 
 
+# Собираем все sitemaps
+sitemaps = {
+    'static': StaticViewSitemap,
+}
+# if BlockViewSiteMap:
+#     sitemaps['blocks'] = BlockViewSiteMap
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps, 'template_name': 'sitemap.xml'},
+         name='django.contrib.sitemaps.views.sitemap'),
     path('favicon.ico', favicon),
     path('', include('apps.home.urls', namespace='home')),
     path('blocks/', include('apps.blocksale.urls', namespace='blocksale')),
